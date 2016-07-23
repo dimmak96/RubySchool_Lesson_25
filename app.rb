@@ -1,2 +1,6 @@
 require 'sqlite3'
-db=SQLite::Database.new 'test.sqlite'
+db=SQLite3::Database.new 'test.sqlite'
+
+db.execute "INSERT INTO Cars (Name, Price) VALUES('Jaguar', 7777)"
+
+db.close
